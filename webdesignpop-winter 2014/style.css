@@ -1,0 +1,742 @@
+/*
+Theme Name: webdesignpop-winter-2014
+Theme URI: http: //webdesignpop.com/
+Description: The winter 2014 theme for the web design POP site.
+Author: Michael Musgrove
+Author URI: http://MichaelMusgrove.com/
+Template: stanleywp
+Version: 3.0.3
+*/
+/* =Admin bar
+-------------------------------------------------------------- */
+html {
+  height: 100%;
+}
+
+body.admin-bar .navbar {
+  height: 40px;
+  position: fixed;
+  top: 28px;
+  z-index: 1000;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: #262626;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-smoothing: antialiased;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: 700;
+  line-height: 1.0em;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.625em; /* = 42px */
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+h2 {
+  font-size: 2.250em; /* = 36px */
+  margin-bottom: .75em;
+  margin-top: .75em;
+}
+
+h3 {
+  font-size: 1.875em; /* = 30px */
+  margin-bottom: .857em;
+  margin-top: .857em;
+}
+
+h4 {
+  font-size: 1.500em; /* = 24px */
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+h5 {
+  font-size: 1.125em; /* = 18px */
+  margin-bottom: 1.125em;
+  margin-top: 1.125em;
+}
+
+h6 {
+  font-size: 1.000em; /* = 16px */
+  margin-bottom: 1.285em;
+  margin-top: 1.285em;
+}
+.author-avatar img { -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px; }
+
+
+/* Paragraph & Typographic */
+p { font-size: 16px; line-height: 28px; margin-bottom: 25px; word-wrap: break-word;}
+
+.centered { text-align: center; }
+
+i,
+em,
+dfn,
+cite {
+  font-style: italic;
+}
+
+
+tt,
+var,
+pre,
+kbd,
+samp,
+code {
+  font-family: monospace, serif;
+  font-style: normal;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+pre {
+  -moz-box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  background: #f4f4f4;
+  border: 1px solid #aaaaaa;
+  border-bottom-color: #cccccc;
+  border-radius: 2px;
+  height: auto;
+  margin: 0;
+  outline: none;
+  padding: 6px 10px;
+  vertical-align: middle;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+del {
+  color: #555555;
+  text-decoration: line-through;
+}
+
+ins,
+dfn {
+  border-bottom: 1px solid #cccccc;
+}
+
+sup,
+sub,
+small {
+  font-size: 85%;
+}
+
+abbr,
+acronym {
+  font-size: 85%;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+a abbr,
+a acronym {
+  border: none;
+}
+
+dfn[title],
+abbr[title],
+acronym[title] {
+  border-bottom: 1px solid #cccccc;
+  cursor: help;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+/* Links */
+a {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  color: #1abc9c;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+  word-wrap: break-word;
+}
+
+a:hover,
+a:focus { color: #7b7b7b; outline: 0; text-decoration: none; }
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+::selection {
+  background: #999999;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #b31d28;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+.navbar { margin-bottom: 0px; text-transform: uppercase; }
+
+.navbar-inverse { padding-bottom: 70px; padding-top: 70px; }
+
+.navbar-inverse { background-color: #2191cc; border-color: #2682b3; }
+
+.navbar-inverse .navbar-nav > li > a { color: white; }
+
+.navbar-inverse .navbar-nav > li > a:hover { color: #fffa5c; }
+
+.navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+
+.navbar-inverse .navbar-brand { color: #ff4351; }
+
+.navbar-inverse .navbar-toggle { border-color: transparent; }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover { background-color: transparent; color: #b31d28; }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #141414; }
+
+.progress-bar-theme { background-color: #2682b3; }
+
+
+/* Helpers */
+
+.mt { margin-bottom: 40px; margin-top: 40px; }
+
+.pt { padding-bottom: 50px; padding-top: 50px; }
+
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww { background-color: #f2f2f2; padding-bottom: 70px; padding-top: 70px; }
+
+
+#footer { background-color: #2f2f2f; padding-bottom: 50px; padding-top: 50px; }
+
+#footer p { color: white; }
+
+#footer h4 { color: white; padding-bottom: 20px; text-transform: uppercase; }
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey { background-color: #f2f2f2; padding-bottom: 60px; padding-top: 60px; }
+
+#white { background-color: #ffffff; padding-bottom: 60px; padding-top: 60px; }
+
+
+
+/* Blog Date*/
+bd {
+  color: #d2d2d2;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Blog Author*/
+ba { font-size: 12px; padding-left: 5px; text-transform: uppercase; }
+
+/* Blog Quote */
+.bq { font-size: 22px; padding-top: 30px; }
+
+/* Blog Tags */
+bt { font-size: 12px; }
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom {
+  background: transparent url(images/loader.gif) no-repeat center;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+  .zoom img { display: none; }
+
+    .zoomOverlay {
+      background-image: url(images/zoom.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: 0;
+      display: none;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+.zoom2 { opacity: 1; }
+
+.zoom2:hover { opacity: 0.5; }
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.ie8 img {
+  height: auto;
+  width: auto\9;
+}
+
+.ie8 img.size-large {
+  max-width: 60%;
+  width: auto;
+}
+
+/* =Responsive Videos
+-------------------------------------------------------------- */
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =Responsive Embeds/Objects
+-------------------------------------------------------------- */
+embed,
+object {
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+/* glyphicon Configuration */
+
+.glyphicon { color: #1abc9c; font-size: 40px; }
+
+/* WP User Avatar */
+
+.wp-user-avatar {margin: 0;}
+
+/* =Forms
+-------------------------------------------------------------- */
+label {
+  display: inline-block;
+  font-weight: 700;
+  padding: 2px 0;
+}
+
+legend {
+  padding: 2px 5px;
+}
+
+fieldset {
+  border: 1px solid #cccccc;
+  margin: 0 0 1.5em;
+  padding: 1em 2em;
+}
+
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  -moz-box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #aaaaaa;
+  border-bottom-color: #cccccc;
+  border-radius: 2px;
+  cursor: text;
+  margin: 0;
+  outline: none;
+  padding: 6px 8px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+select {
+  height: auto;
+  max-width: 100%;
+}
+
+area,
+textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border: 1px solid #aaaaaa;
+  border-bottom-color: #cccccc;
+  border-radius: 2px;
+  height: auto;
+  overflow: auto;
+  margin: 0;
+  outline: none;
+  padding: 8px 10px;
+  max-width: 100%;
+}
+
+map area {
+  padding: 0px;
+  border: 0px;
+}
+
+input,
+select {
+  cursor: pointer;
+}
+
+area:focus,
+input:focus,
+textarea:focus {
+  border: 1px solid #66ccff;
+}
+
+input[type='text'],
+input[type='password'] {
+  cursor: text;
+}
+
+/* =IE Forms
+-------------------------------------------------------------- */
+.ie7 area,
+.ie7 select,
+.ie7 textarea,
+.ie7 input[type="text"],
+.ie7 input[type="password"],
+.ie7 input[type="email"] {
+  width: 96%;
+}
+
+/* =IE6 Notice
+-------------------------------------------------------------- */
+.msie-box {
+  background-color: #f9edbe;
+  border: 1px solid #f0c36d;
+  color: #212121;
+  display: block;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.msie-box a {
+  color: #212121;
+}
+
+/* =Tables
+-------------------------------------------------------------- */
+th,
+td,
+table {
+  border: 1px solid #dddddd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* =Lists
+-------------------------------------------------------------- */
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  line-height: 22px;
+  list-style-position: outside;
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: 400;
+}
+
+/* =Blockquote
+-------------------------------------------------------------- */
+blockquote {
+  background: #f9f9f9;
+  border: none;
+  border-left: 4px solid #d6d6d6;
+  margin: 20px;
+  overflow: auto;
+  padding: 0 0 10px 12px;
+}
+
+blockquote p {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* =bbPress
+    bbPress has its own breadcrumb lists
+-------------------------------------------------------------- */
+.bbPress .breadcrumb-list {
+  display: none;
+}
+
+/* =Symbols
+-------------------------------------------------------------- */
+.ellipsis {
+  color: #aaaaaa;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.form-allowed-tags {
+  display: none;
+  font-size: 10px;
+}
+
+/* =404 Page
+-------------------------------------------------------------- */
+.error404 select,
+.error404 input[type="text"],
+.error404 input[type="password"],
+.error404 input[type="email"] {
+  width: auto;
+}
+
+/* =Accessibility
+-------------------------------------------------------------- */
+.screen-reader-text{
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* =WordPress Gallery
+-------------------------------------------------------------- */
+.gallery {
+  margin: 0 auto 18px;
+}
+
+.gallery .gallery-item {
+  float: left;
+  margin-top: 0;
+  text-align: center;
+  max-width: 155px;
+}
+
+.gallery img {
+  border: 1px solid #dddddd;
+}
+
+.gallery .gallery-caption {
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+
+.gallery dl {
+  margin: 0;
+}
+
+.gallery br+br {
+  display: none;
+}
+
+.attachment-gallery img {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  display: block;
+  height: auto;
+  margin: 15px auto;
+  max-width: 96%;
+  padding: 5px;
+  width: auto;
+}
+
+.gallery-meta .iso,
+.gallery-meta .camera,
+.gallery-meta .shutter,
+.gallery-meta .aperture,
+.gallery-meta .full-size,
+.gallery-meta .focal-length {
+  display: block;
+}
+
+/* =Post Thumbnails
+-------------------------------------------------------------- */
+img.wp-post-image,
+img.attachment-full,
+img.attachment-large,
+img.attachment-medium,
+img.attachment-thumbnail {
+  display: block;
+  margin: 15px auto;
+  width: auto;
+}
+
+/* =Buttons
+-------------------------------------------------------------- */
+a.button,
+input[type='reset'],
+input[type='button'],
+input[type='submit'] {
+  -moz-border-radius: 2px;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  -webkit-border-radius: 2px;
+  background-color: #f9f9f9; /* Alabaster */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: linear-gradient(top, #f9f9f9, #f1f1f1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f9f9f9, endColorstr=#f1f1f1);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  padding: 4px 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+a.button:hover,
+input[type='reset']:hover,
+input[type='button']:hover,
+input[type='submit']:hover {
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -o-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: linear-gradient(top, #ffffff, #f1f1f1);
+  border: 1px solid #dddddd;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  color: #333333;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f1f1f1);
+}
+
+a.button:active,
+input[type='reset']:active,
+input[type='button']:active,
+input[type='submit']:active {
+  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: -ms-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f1f1f1);
+  background-image: linear-gradient(top, #f9f9f9, #f1f1f1);
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f9f9f9, endColorstr=#f1f1f1);
+}
+
+/* =Clearfix
+-------------------------------------------------------------- */
+.clearfix:after,
+.clearfix:before,
+#container:after,
+#container:before,
+.widget-wrapper:after,
+.widget-wrapper:before {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after,
+#container:after,
+.widget-wrapper:after {
+  clear: both;
+}
+
+.ie7 .clearfix,
+.ie7 #container,
+.ie7 .widget-wrapper {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+/* =Media Print
+-------------------------------------------------------------- */
+@media print {
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  ul, ol, dl {
+    page-break-before: avoid;
+  }
+}
+
+/*  Retina (HiDPI) Display
+    http://www.quirksmode.org/blog/archives/2012/06/devicepixelrati.html
+-------------------------------------------------------------- */
+@media only screen and (-moz-min-device-pixel-ratio:1.5), only screen and (-o-min-device-pixel-ratio:3/2), only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
+
+  body {
+  }
+}

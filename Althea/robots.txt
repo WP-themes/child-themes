@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-*
+Disallow: *.php
+Disallow: */feed*
+Disallow: */trackback*
+Disallow: /20*
+Sitemap: http://webdesignpop.com/sitemap.xml

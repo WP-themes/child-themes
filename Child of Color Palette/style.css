@@ -1,0 +1,19 @@
+/*
+Theme Name:     Child of Color Palette
+Theme URI:      http://webdesignpop.com/
+Description:    Child theme for the 'Color Palette' theme
+Author:         Michael Musgrove
+Author URI:     http://michaelmusgrove.com/about/
+Template:       color-palette
+Version:        0.1.0
+*/
+@import url("../colorpalette/style.css");
+body {
+font-size: 2px;
+font-family: arial, sans-serif;
+line-height: 1.625em;
+padding-bottom: 0px;
+color: #5a5a5a;
+background: #4a535a;
+}
+

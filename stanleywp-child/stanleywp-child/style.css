@@ -1,0 +1,11 @@
+/*
+Theme Name:     StanleyWP Child
+Theme URI:      http://example.com/
+Description:    Child theme for the Twenty Thirteen theme
+Author:         Your name here
+Author URI:     http://example.com/about/
+Template:       stanleywp
+Version:        0.1.0
+*/
+
+@import url("../stanleywp/style.css");

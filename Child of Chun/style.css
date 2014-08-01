@@ -1,0 +1,13 @@
+/*
+Theme Name:     Child of Chun
+Theme URI:      http://webdesignpop.com/
+Description:    Child theme for Tadlock's 'Chun' theme
+Author:         Michael Musgrove
+Author URI:     http://michaelmusgrove.com/about/
+Template:       Chun
+Version:        0.1.0
+*/
+@import url("../chun/style.css");
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+body{font-family: 'Cabin', sans-serif;}
+#footer {color: #34495E;}

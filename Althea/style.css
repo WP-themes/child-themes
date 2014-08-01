@@ -1,0 +1,86 @@
+/*
+Theme Name:     Althea
+Theme URI:      http://webdesignpop.com/
+Description:    Althea: Child theme for Automattic's 'Ryu' theme
+Author:         Michael Musgrove
+Author URI:     http://michaelmusgrove.com/about/
+Template:       ryu
+Version:        0.1.0
+*/
+@import url("../Ryu/style.css");
+/*@import url(http://weloveiconfonts.com/api/?family=zocial);*/
+
+/* zocial
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+[class*="zocial-"]:before,
+[class*="zocial-"]:after {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px/1 'zocial';
+  font-size: 1.6rem;
+  vertical-align: top;
+}
+*/
+/* Triggers */
+#triggers-wrapper {
+  text-align: center;
+}
+.triggers {
+  display: inline-block;
+  margin: 0 0 34px;
+  vertical-align: top;
+}
+.triggers li {
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+.triggers a {
+  color: #bdc3c7;
+  display: block;
+  width: 72px;
+  height: 34px;
+}
+/*
+.triggers a:focus {
+  outline: 0;
+}
+.widgets-trigger a:before {
+  content: '\f419';
+  margin-top: 7px;
+}
+.social-links-trigger a:before {
+  content: '\f107';
+  font-size: 24px;
+  margin-top: 4px;
+}
+.search-trigger a:before {
+  content: '\f400';
+  margin-top: 7px;
+}
+
+.navigation-main li:after {
+  content: '\2022';
+  display: inline-block;
+  font-size: 11px;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+*/
+p, body, .entry-title a, ul li, ol li {color:#000}
+.entry-title a:hover{color:#2980b9}
+#commentform label{padding-left:5%}
+#social-links-wrapper, #search-wrapper, .toppanel, .toppanel hide, .triggers a{background-color:#2980b9}
+.triggers a:hover{background-color:#3498db}
+.navigation-main a:hover{color:#3498db}
+.navigation-main a:active{#c0392b}
+.navigation-main li.current_page_item > a, .navigation-main li.current-menu-item > a{color:#2980b9}
+#page{border-top: 5px solid #c0392b}
+/*--spread out the social icons--*/
+.social-links li {margin: 8px 8px 0}
+/*--Thin border between page sections--*/
+.page-header,.hentry{border-bottom:1px solid #bdc3c7}
+.social-links a, .triggers a{color: #ecf0f1;width: 40px;height: 40px}
+.social-links a:hover{background-color:rgba(255,255,255,0.4)}

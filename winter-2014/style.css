@@ -1,0 +1,271 @@
+/*
+ Theme Name:   winter-2014
+ Theme URI:    http://webdesignpop.com/winter-2014/
+ Description:  Stanley's Child
+ Author:       Michael Musgrove
+ Author URI:   http://michaelmusgrove.com
+ Template:     stanleywp
+ Version:      1.0.0
+ Tags:         responsive-layout, minimalistic
+ Text Domain:  winter-2014
+*/
+
+@import url("../StanleyWP/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/* Color Pallate:
+dk red: #b31d28
+yellow: #fffa5c
+light red: #ff4351
+light blue: #2191cc
+dark blue: #2682b3
+*/
+
+.genericon{
+	font-size:2.5em;
+	color:#2682b3;
+}
+.genericon:hover{
+	font-size:2.75em;
+	color:#ff4351;
+		-webkit-transform: rotate(5deg);
+	   -moz-transform: rotate(5deg);
+	    -ms-transform: rotate(5deg);
+	     -o-transform: rotate(5deg);
+	        transform: rotate(5deg);
+	        webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* =Admin bar
+-------------------------------------------------------------- */
+body.admin-bar .navbar {
+	height: 40px;
+	position: fixed;
+	top: 28px;
+	z-index: 1000;
+}
+html{height:100%;}
+body {
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	background-color: #fefefe;
+	color: #262626;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	height: 100%;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 { color: #262626; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+h1 { font-size: 35px; margin-bottom: 30px; margin-top: 30px; }
+
+.author-avatar img { -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px; }
+
+/* Paragraph & Typographic */
+p { font-size: 16px; line-height: 28px; margin-bottom: 25px; }
+
+.centered { text-align: center; }
+
+/* Links */
+media="all"
+a {
+-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+color: white;
+transition: color 0.1s ease-in, background 0.1s ease-in;
+word-wrap: break-word;
+}
+
+a:hover,
+a:focus { color: #fffa5c; outline: 0; text-decoration: none; }
+
+a:before,
+a:after {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+	display: block;
+	height: 1px;
+	margin: 1em 0;
+	padding: 0;
+}
+
+body:before {
+          content: "";
+          position: fixed;
+          top: -10px;
+          left: 0;
+          width: 100%;
+          height: 10px;
+
+          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+          z-index: 100;
+}
+
+.navbar { margin-bottom: 0px; text-transform: uppercase; }
+
+.navbar-inverse { padding-bottom: 70px; padding-top: 70px; }
+
+.navbar-inverse {
+background-color: #efefef;
+border: 1px ridge black;
+}
+
+.navbar-inverse .navbar-nav > li > a { color: black; }
+
+.navbar-inverse .navbar-nav > li > a:hover { color: #2191cc; }
+
+.navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+
+.navbar-inverse .navbar-brand { color: black; }
+
+.navbar-inverse .navbar-toggle { border-color: transparent; }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover { background-color: transparent; color: #262626; }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #b31d28; }
+
+.progress-bar-theme { background-color: #b31d28; }
+
+
+/* Helpers */
+.mt { margin-bottom: 40px; margin-top: 40px; }
+
+.pt { padding-bottom: 50px; padding-top: 50px; }
+
+/* +++++ Color Wraps / Blog Page +++++ */
+#grey { background-color: #f2f2f2; padding-bottom: 60px; padding-top: 60px; }
+
+#white { background-color: #ffffff; padding-bottom: 60px; padding-top: 60px; }
+/*Gravity Forms Submit button*/
+input[type=submit] {
+color: #efefef;
+background-color: #ff4351;
+}
+input[type=submit]:hover {
+color: #efefef;
+background-color: #2191cc;
+}
+/* Blog Date*/
+bd {
+	color: #d2d2d2;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Blog Author*/
+ba { font-size: 12px; padding-left: 5px; text-transform: uppercase; }
+
+/* Blog Quote */
+.bq { font-size: 22px; padding-top: 30px; }
+
+/* Blog Tags */
+bt { font-size: 12px; }
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom {
+	background: transparent url(images/loader.gif) no-repeat center;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+	.zoom img { display: none; }
+
+		.zoomOverlay {
+			background-image: url(images/zoom.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			bottom: 0;
+			display: none;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+.zoom2 { opacity: 1; }
+
+.zoom2:hover { opacity: 0.5; }
+
+/* glyphicon Configuration */
+.glyphicon { color: #1abc9c; font-size: 40px; }
+
+/* ICONIC Icons */
+.iconic {
+  fill: #ff4351;
+  stroke: #b31d28;
+}
+
+/* WP User Avatar */
+.wp-user-avatar {margin: 0;}
+/*centering front logo image*/
+.wp-image-67 {
+position: absolute;
+top: 7em;
+left: 0%;
+}
+.front-buttons{
+	display: inline-flex;
+	float: left;
+	clear: left;
+	margin-top:28em;
+}
+.round-button {
+display: block;
+width: 100px;
+height: 100px;
+line-height: 96px;
+border: 2px solid #f5f5f5;
+border-radius: 50%;
+color: #fefefe;
+text-align: center;
+text-decoration: none;
+background: #464646;
+box-shadow: 0 0 3px gray;
+font-size: 20px;
+font-weight: bold;
+margin: 0 3.7em;
+}
+.who{
+	background-color: #ff4351;
+}
+.what{
+	background-color: #fffa5c;
+	color: #262626;
+}
+.how{
+	background-color: #2191cc;
+}
+.round-button:hover {
+    background: #262626;
+}
+#copyright-wrap{
+	position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+#copyright {
+text-align: center;
+}

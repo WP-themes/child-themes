@@ -1,0 +1,11 @@
+/*
+THEME NAME: Cassidy
+THEME URI: http://webdesignpop.com/
+DESCRIPTION: Huge front page image with info boxes. A child theme of Starter Box
+VERSION: 0.1
+AUTHOR: Michael Musgrove
+AUTHOR Uri: http://Michael Musgrove.com
+TAGS: one column, two columns, three columns, awesome
+TEMPLATE: startbox
+*/
+@import url("../startbox/style.css");
